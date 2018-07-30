@@ -43,6 +43,10 @@ public class FindKthLargest {
 		int a[]={3,2,3,1,2,4,5,5,6};
 		int findKthLargest = findKthLargest(a,4);
 		System.out.println(findKthLargest);
+		for (int i : a) {
+			System.out.println(i);
+			
+		}
 	}
 
 }
