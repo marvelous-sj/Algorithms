@@ -18,7 +18,7 @@ import java.util.List;
  *
  */
 public class Permute {
-	 List<List<Integer>> res=new ArrayList<>();
+	 static List<List<Integer>> res=new ArrayList<>();
 	    public List<List<Integer>> permute(int[] nums) {
 	        List<Integer> list=new ArrayList<>();
 	        if(nums.length==0){
@@ -40,4 +40,15 @@ public class Permute {
 	            }
 	        }
 	    }
+	    public static void main(String[] args) {
+	    	Permute p=new Permute();
+	    	int[] arr={1,1,2};
+	    	p.permute(arr);
+	    	for (List<Integer> i : res) {
+				for (Integer integer : i) {
+					System.out.println(integer);
+				}
+			}
+	    	
+		}
 }
