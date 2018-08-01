@@ -1,5 +1,8 @@
 package xyz.marsj.recursion;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**79
  * 给定一个二维网格和一个单词，找出该单词是否存在于网格中。
 	单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。
@@ -62,9 +65,21 @@ public class Exist {
 	}
 
 	public static void main(String[] args) {
-		Exist e=new Exist();
-		char[][] board={{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}};
-		boolean exist = e.exist(board, "ABCCED");
-		System.out.println(exist);
+//		Exist e=new Exist();
+//		char[][] board={{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}};
+//		boolean exist = e.exist(board, "ABCCED");
+//		System.out.println(exist);
+		List<Integer> list=new ArrayList<>();
+		list.add(10);
+		list.add(1);
+		list.add(3);
+		list.add(6);
+		list.add(50);
+		StringBuilder sb=new StringBuilder();
+		sb.append("w");
+		sb.append("c");
+		String sb1=new String("dd");
+				
+		System.out.println(sb1.toString());
 	}
 }
