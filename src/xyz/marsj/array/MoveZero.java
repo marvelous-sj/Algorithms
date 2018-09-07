@@ -17,10 +17,8 @@ public class MoveZero {
 					int temp = nums[x];
 					nums[x] = nums[i];
 					nums[i]= temp;
-					x++;
-				}else{
-					x++;
 				}
+				x++;
 			}
 		}
 		return nums;

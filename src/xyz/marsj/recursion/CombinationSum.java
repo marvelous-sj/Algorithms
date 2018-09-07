@@ -41,7 +41,7 @@ public class CombinationSum {
 				list.remove(list.size()-1);
 //				while(i < candidates.length-1 && candidates[i] == candidates[i+1]){
 //					i++;
-//				}
+//				}题中说明 无重复元素
 			}else{
 				return;
 			}
@@ -50,7 +50,7 @@ public class CombinationSum {
 	}
 	
 	public static void main(String[] args) {
-		int a[]={10,1,2,7,6,1,5};
+		int a[]={10,1,2,7,6,5};
 		CombinationSum c=new CombinationSum();
 		c.combinationSum(a, 8);
 		for (List<Integer> i : res) {

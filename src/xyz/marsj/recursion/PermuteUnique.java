@@ -44,9 +44,9 @@ public class PermuteUnique {
                 doPermute(nums,index+1,list);
                 pos[i]=0;
                 list.remove(list.size()-1);
-//                while(i<nums.length-1&&nums[i]==nums[i+1]){
-//                    i++;
-//                }
+                while(i<nums.length-1&&nums[i]==nums[i+1]){
+                    i++;
+                }
             }
         }
     }
@@ -56,9 +56,7 @@ public class PermuteUnique {
     	int[] arr={1,1,2};
     	p.permuteUnique(arr);
     	for (List<Integer> i : res) {
-			for (Integer integer : i) {
-				System.out.println(integer);
-			}
+			System.out.println(i);
 		}
     	
 	}
